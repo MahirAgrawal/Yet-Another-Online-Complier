@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../javascript/ace.js"></script>
+  <script src="../javascript/theme-monokai.js"></script>
+  <script src="../javascript/lib/aceeditor.js"></script>
+  <link rel="stylesheet" href="../css/styles.css"/>
+  <title>Online Compiler</title>
+</head>
+<body>
+    <div class='container'>
+      <div class='heading flex p-1'>Online Editor</div>
+      <div class='language-selection flex justify-end pr-10'>
+        <label class='dropdown-menu-label' for='language-menu'>Select Language:</label>
+        <select class='dropdown-menu ml-3' id='language-menu'>
+          <option value='cpp'>C++</option>
+          <option value='c'>C</option>
+          <option value='python'>PYTHON</option>
+          <option value='java'>JAVA</option>
+        </select>
+      </div>
+      <div id='editor'></div>
+      <div class='submit-btn-container flex justify-end pr-10 p-1'>
+        <button class="submit-btn">
+          Execute
+        </button>
+      </div>
+      <div class='output mt-1' placeholder="Output will appear here..."></div>  
+    </div>
+</body>
+</html>

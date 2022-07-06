@@ -1,0 +1,59 @@
+.heading{
+  font-size: 40px;
+  background-color: #16a34a;
+}
+
+.language-selection{
+  background-color: lightgray;
+}
+
+.dropdown-menu,.dropdown-menu-label{ 
+  font-size: 1.2em;
+}
+
+.submit-btn-container{
+  background-color: lightgray;
+}
+
+.submit-btn{
+  background-color: rgb(59 130 246);
+  color: white;
+  font: bold;
+	padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem; 
+  padding-right: 1rem;
+  border-bottom-width: 2px; 
+  border-color: rgb(29 78 216);
+  border-radius: 0.25rem;
+}
+
+.submit-btn:hover{
+  background-color: rgb(96 165 250);
+  border-color: rgb(59 130 246);
+}
+
+.submit-btn-disabled{
+  cursor: not-allowed;
+  background-color: rgb(96 165 250);
+  border-color: rgb(59 130 246);
+}
+
+.dropdown-menu{
+  border-width: 1px;
+  border-color: black;
+  border-radius: 5px;
+}
+
+#editor{
+  height: 400px;
+} 
+
+.output{
+  overflow: scroll;
+  border-width: 0.1rem;
+  border-color: black;
+  height: 150px;
+  padding-left: 20px;
+  font-size: 20px;
+}
