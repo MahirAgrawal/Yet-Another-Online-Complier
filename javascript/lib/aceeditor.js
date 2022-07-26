@@ -26,7 +26,7 @@ window.onload = function(){
 
     //making request to compile and run
     $.ajax({
-      url: 'http://compiler/api/v1/submit',
+      url: 'https://yet-another-compiler.herokuapp.com/api',
       type: 'POST',
       data: {
         code: editor.getValue(),
