@@ -29,9 +29,9 @@ window.onload = function(){
       url: 'https://yet-another-compiler.herokuapp.com/api',
       type: 'POST',
       data: {
-        code: editor.getValue(),
-        language: document.getElementById('language-menu').value,
-        stdin : ''
+        "code" : editor.getValue(),
+        "language" : document.getElementById('language-menu').value,
+        "stdin" : ''
       },
       success: function(response){
         output = '';
