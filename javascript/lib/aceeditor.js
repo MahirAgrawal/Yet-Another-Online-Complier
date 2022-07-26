@@ -24,10 +24,16 @@ window.onload = function(){
     $('.submit-btn').attr('style','cursor:not-allowed;');
     $('.submit-btn').attr('disabled','true');
 
+    console.log({
+      "code" : editor.getValue(),
+      "language" : document.getElementById('language-menu').value,
+      "stdin" : ''
+    });
     //making request to compile and run
     $.ajax({
-      url: 'https://yet-another-compiler.herokuapp.com/api',
+      url: 'https://yet-another-compiler.herokuapp.com//api',
       type: 'POST',
+      dataType: "json",
       data: {
         "code" : editor.getValue(),
         "language" : document.getElementById('language-menu').value,
@@ -53,7 +59,8 @@ window.onload = function(){
         $('.output').html(output);
       },
       error: function(error){
-        $('.output').html('Unknown Error');
+        console.log(error.responseText)
+        $('.output').html('Error');
       },
       complete: function(){
         //enable submit button again on response recieved
