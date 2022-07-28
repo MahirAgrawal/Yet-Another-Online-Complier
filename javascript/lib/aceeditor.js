@@ -31,7 +31,7 @@ window.onload = function(){
     });
     //making request to compile and run
     $.ajax({
-      url: 'https://yet-another-compiler.herokuapp.com//api',
+      url: 'https://yet-another-compiler.herokuapp.com/api',
       type: 'POST',
       dataType: "json",
       data: {
